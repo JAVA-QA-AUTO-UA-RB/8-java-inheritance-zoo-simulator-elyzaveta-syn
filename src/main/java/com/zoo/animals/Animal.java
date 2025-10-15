@@ -13,31 +13,26 @@ public class Animal {
 
     private int energyLevel;
 
-    // збільшує енергію на 20
     public void eat() {
         System.out.println(name + " is eating...");
         energyLevel = this.energyLevel + 20;
     }
 
-    // збільшує енергію на 30
     public void sleep() {
         System.out.println(name + " is sleeping...");
         energyLevel = this.energyLevel + 30;
     }
 
-    // виводить загальний звук
     protected void makeSound() {
-        System.out.println("Rrrawwrr");
+        System.out.println("Scream");
     }
 
-    // виводить інформацію про тварину
     public void displayInfo() {
         System.out.println("Name" + name +
                 "\n Age" + age +
                 "\n Weight" + weight);
     }
 
-    // публічні Геттери для всіх полів
     public String getName() {
         return name;
     }
