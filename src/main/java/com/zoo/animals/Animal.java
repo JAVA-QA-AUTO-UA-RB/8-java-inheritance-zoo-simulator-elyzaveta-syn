@@ -15,12 +15,12 @@ public class Animal {
 
     public void eat() {
         System.out.println(name + " is eating...");
-        energyLevel = this.energyLevel + 20;
+        increaseEnergy(20);
     }
 
     public void sleep() {
         System.out.println(name + " is sleeping...");
-        energyLevel = this.energyLevel + 30;
+        increaseEnergy(30);
     }
 
     protected void makeSound() {
