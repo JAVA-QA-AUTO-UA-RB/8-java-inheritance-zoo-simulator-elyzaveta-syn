@@ -48,4 +48,16 @@ public class Animal {
     public int getEnergyLevel() {
         return energyLevel;
     }
+
+    public void increaseEnergy(int integer1) {
+        energyLevel = Math.min(100, energyLevel + integer1);
+    }
+
+    public void decreaseEnergy(int integer2) {
+        energyLevel = Math.max(1, energyLevel - integer2);
+    }
+
+    public void setEnergyLevel() {
+        this.energyLevel = Math.max(1, Math.min(100, energyLevel));
+    }
 }
