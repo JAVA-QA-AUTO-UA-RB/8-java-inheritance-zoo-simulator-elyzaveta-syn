@@ -9,12 +9,12 @@ public class Bird extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println("Sing");
+        System.out.println("Цвірінькає");
         super.makeSound();
     }
 
     public void fly() {
-        System.out.println(name + " is flying.");
+        System.out.println(name + " літає.");
         decreaseEnergy(15);
     }
 }

@@ -14,23 +14,23 @@ public class Animal {
     private int energyLevel;
 
     public void eat() {
-        System.out.println(name + " is eating...");
+        System.out.println(name + " зараз їсть...");
         increaseEnergy(20);
     }
 
     public void sleep() {
-        System.out.println(name + " is sleeping...");
+        System.out.println(name + " зараз спить...");
         increaseEnergy(30);
     }
 
     protected void makeSound() {
-        System.out.println("Scream");
+        System.out.println("Кричить");
     }
 
     public void displayInfo() {
-        System.out.println("Name" + name +
-                "\n Age" + age +
-                "\n Weight" + weight);
+        System.out.println("Ім'я" + name +
+                "\n Вік" + age +
+                "\n Вага" + weight);
     }
 
     public String getName() {

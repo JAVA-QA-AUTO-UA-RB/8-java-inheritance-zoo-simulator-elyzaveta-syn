@@ -9,11 +9,11 @@ public class Mammal extends Animal {
 
     @Override
     public void makeSound() {
-        System.out.println("Groan");
+        System.out.println("Стогне");
         super.makeSound();
     }
 
     public void groom() {
-        System.out.println(name + "'s fur is being groomed.");
+        System.out.println("Хутро" + name + "зараз чистять.");
     }
 }
