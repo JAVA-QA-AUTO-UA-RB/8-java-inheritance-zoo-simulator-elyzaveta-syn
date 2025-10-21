@@ -13,7 +13,7 @@ public class Lion extends Mammal {
     }
 
     public void hunt(){
-        System.out.println(name + " is hunting");
+        System.out.println(name + " полює.");
         decreaseEnergy(25);
     }
 }

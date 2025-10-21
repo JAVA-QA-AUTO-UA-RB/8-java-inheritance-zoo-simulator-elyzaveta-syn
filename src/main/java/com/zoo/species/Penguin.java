@@ -13,7 +13,7 @@ public class Penguin extends Bird {
     }
 
     public void swim() {
-        System.out.println(name + " is swimming.");
+        System.out.println(name + " пливе.");
     }
 
     @Override

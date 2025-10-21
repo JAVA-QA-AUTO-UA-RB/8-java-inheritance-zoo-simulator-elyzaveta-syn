@@ -14,7 +14,7 @@ public class Eagle extends Bird {
 
     @Override
     public void fly() {
-        System.out.println(name + " is flying.");
+        System.out.println(name + " летить.");
         decreaseEnergy(20);
     }
 }
