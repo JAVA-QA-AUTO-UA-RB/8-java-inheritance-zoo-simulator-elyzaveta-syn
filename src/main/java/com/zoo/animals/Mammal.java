@@ -10,7 +10,6 @@ public class Mammal extends Animal {
     @Override
     public void makeSound() {
         System.out.println("Стогне");
-        super.makeSound();
     }
 
     public void groom() {

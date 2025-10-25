@@ -9,7 +9,6 @@ public class Penguin extends Bird {
     @Override
     public void makeSound() {
         System.out.println("Кря-кря!");
-        super.makeSound();
     }
 
     public void swim() {

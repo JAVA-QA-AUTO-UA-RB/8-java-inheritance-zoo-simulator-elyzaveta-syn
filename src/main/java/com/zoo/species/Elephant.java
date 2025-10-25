@@ -9,7 +9,6 @@ public class Elephant extends Mammal {
     @Override
     public void makeSound() {
         System.out.println("Труба-ба-ба!");
-        super.makeSound();
     }
 
     public void spraySelf() {

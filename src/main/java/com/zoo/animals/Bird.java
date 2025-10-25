@@ -10,7 +10,6 @@ public class Bird extends Animal {
     @Override
     public void makeSound() {
         System.out.println("Цвірінькає");
-        super.makeSound();
     }
 
     public void fly() {
