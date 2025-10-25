@@ -14,12 +14,12 @@ public class Animal {
     private int energyLevel;
 
     public void eat() {
-        System.out.println(name + " зараз їсть...");
+        System.out.println(name + " зараз їсть.");
         increaseEnergy(20);
     }
 
     public void sleep() {
-        System.out.println(name + " зараз спить...");
+        System.out.println(name + " зараз спить.");
         increaseEnergy(30);
     }
 
