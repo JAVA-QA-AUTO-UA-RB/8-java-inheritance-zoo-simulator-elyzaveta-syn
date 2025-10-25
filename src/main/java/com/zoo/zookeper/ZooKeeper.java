@@ -5,6 +5,12 @@ import com.zoo.animals.Animal;
 public class ZooKeeper {
 
     private String name;
+    private int age;
+
+    public ZooKeeper(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
     public void feedAnimal(Animal animal) {
         System.out.println(name + " годує" + animal);
