@@ -60,4 +60,8 @@ public class Animal {
     public void setEnergyLevel() {
         this.energyLevel = Math.max(1, Math.min(100, energyLevel));
     }
+
+    public void setMakeSound() {
+        makeSound();
+    }
 }
