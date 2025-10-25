@@ -12,6 +12,10 @@ public class ZooKeeper {
         this.age = age;
     }
 
+    public void talk() {
+        System.out.println(name + " говорить:");
+    }
+
     public void feedAnimal(Animal animal) {
         System.out.println(name + " годує" + animal);
     }
