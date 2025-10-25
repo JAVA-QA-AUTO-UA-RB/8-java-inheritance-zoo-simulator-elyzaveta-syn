@@ -12,16 +12,16 @@ public class ZooKeeper {
         this.age = age;
     }
 
-    public void talk() {
-        System.out.println(name + " говорить:");
+    public void talk(String interlocutor) {
+        System.out.println(name + " говорить з " + interlocutor);
     }
 
     public void feedAnimal(Animal animal) {
-        System.out.println(name + " годує" + animal);
+        System.out.println(name + " годує " + animal);
     }
 
     public void playWithAnimal(Animal animal) {
-        System.out.println(name + " грається з" + animal);
+        System.out.println(name + " грається з " + animal);
         animal.setMakeSound();
     }
 
@@ -36,5 +36,9 @@ public class ZooKeeper {
         } else {
             System.out.println(animal + " має високий рівень енергії.");
         }
+    }
+
+    public String getName() {
+        return name;
     }
 }
