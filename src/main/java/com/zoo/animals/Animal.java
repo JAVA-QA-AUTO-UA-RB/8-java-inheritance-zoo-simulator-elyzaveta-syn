@@ -12,6 +12,7 @@ public class Animal {
     }
 
     private int energyLevel;
+    private int state;
 
     public void eat() {
         System.out.println(name + " зараз їсть.");
@@ -28,9 +29,20 @@ public class Animal {
     }
 
     public void displayInfo() {
-        System.out.println("Ім'я" + name +
-                "\n Вік" + age +
-                "\n Вага" + weight);
+        System.out.println("Ім'я: " + name +
+                "\n Вік: " + age +
+                "\n Вага: " + weight);
+    }
+
+    public void displayAnimalState() {
+        int state = getState();
+        if (state <= 30) {
+            System.out.println("Стан " + getName() + " : виснажена.");
+        } else if (state == 31 && state <= 70) {
+            System.out.println("Стан " + getName() + " : задоволена.");
+        } else {
+            System.out.println("Стан " + getName() + " : повна енергії.");
+        }
     }
 
     public String getName() {
@@ -49,6 +61,8 @@ public class Animal {
         return energyLevel;
     }
 
+    public int getState() { return state; }
+
     public void increaseEnergy(int integer1) {
         energyLevel = Math.min(100, energyLevel + integer1);
     }
@@ -58,6 +72,10 @@ public class Animal {
     }
 
     public void setEnergyLevel() {
+        this.energyLevel = Math.max(1, Math.min(100, energyLevel));
+    }
+
+    public void setState() {
         this.energyLevel = Math.max(1, Math.min(100, energyLevel));
     }
 
