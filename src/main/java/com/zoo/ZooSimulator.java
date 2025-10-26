@@ -55,8 +55,6 @@ public class ZooSimulator {
         emperorPenguin0.makeSound();
         emperorPenguin1.fly();
 
-        // - Годування тварин: використання методу feedAnimal().
-
         System.out.println("\nДоки відвідувачі пішли на екскурсію, працівники піклуються про тваринок...\n");
         zooKeeper1.feedAnimal(goldenLion0);
         zooKeeper1.feedAnimal(goldenLion1);
@@ -70,9 +68,54 @@ public class ZooSimulator {
         zooKeeper2.playWithAnimal(emperorPenguin0);
         zooKeeper2.playWithAnimal(emperorPenguin1);
 
-        // - Перевірка рівня енергії тварин: використання методу checkAnimalEnergyLevel().
+        System.out.println("\nПотім усі відпочивають...\n");
+        goldenLion0.sleep();
+        goldenLion1.sleep();
+        goldenLion2.sleep();
+        goldenLion3.sleep();
+        forestElephant0.sleep();
+        forestElephant1.sleep();
+        harpyEagle0.sleep();
+        harpyEagle1.sleep();
+        harpyEagle2.sleep();
+        emperorPenguin0.sleep();
+        emperorPenguin1.sleep();
 
-        // Виведіть фінальні результати та стани тварин наприкінці дня.
+        System.out.println("\nВ кінці дня, працівники завжди перевіряють стан тварин.\n");
+        zookeeper0.checkAnimalEnergyLevel(goldenLion0);
+        zookeeper0.checkAnimalEnergyLevel(goldenLion1);
+        zookeeper0.checkAnimalEnergyLevel(goldenLion2);
+        zookeeper0.checkAnimalEnergyLevel(goldenLion3);
+        zooKeeper1.checkAnimalEnergyLevel(forestElephant0);
+        zooKeeper1.checkAnimalEnergyLevel(forestElephant1);
+        zooKeeper2.checkAnimalEnergyLevel(harpyEagle0);
+        zooKeeper2.checkAnimalEnergyLevel(harpyEagle1);
+        zooKeeper2.checkAnimalEnergyLevel(harpyEagle2);
+        zooKeeper3.checkAnimalEnergyLevel(emperorPenguin0);
+        zooKeeper3.checkAnimalEnergyLevel(emperorPenguin1);
 
+        System.out.println("\nПотім треба заповнити звіти.\n");
+        goldenLion0.displayInfo();
+        goldenLion0.displayAnimalState();
+        goldenLion1.displayInfo();
+        goldenLion1.displayAnimalState();
+        goldenLion2.displayInfo();
+        goldenLion2.displayAnimalState();
+        goldenLion3.displayInfo();
+        goldenLion3.displayAnimalState();
+        forestElephant0.displayInfo();
+        forestElephant0.displayAnimalState();
+        forestElephant1.displayInfo();
+        forestElephant1.displayAnimalState();
+        harpyEagle0.displayInfo();
+        harpyEagle0.displayAnimalState();
+        harpyEagle1.displayInfo();
+        harpyEagle1.displayAnimalState();
+        harpyEagle2.displayInfo();
+        harpyEagle2.displayAnimalState();
+        emperorPenguin0.displayInfo();
+        emperorPenguin0.displayAnimalState();
+        emperorPenguin1.displayInfo();
+        emperorPenguin1.displayAnimalState();
     }
 }
