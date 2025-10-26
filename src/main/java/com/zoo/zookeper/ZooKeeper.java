@@ -28,13 +28,13 @@ public class ZooKeeper {
     public void checkAnimalEnergyLevel(Animal animal) {
         System.out.println(name + "перевіряє рівень енергії" + animal.getName());
         int energyLevel = animal.getEnergyLevel();
-        System.out.println("Рівень енергії " + animal + " дорівнює " + energyLevel);
+        System.out.println("Рівень енергії " + animal.getName() + " дорівнює " + energyLevel);
         if (energyLevel <= 30) {
-            System.out.println(animal + " має низький рівень енергії.");
+            System.out.println(animal.getName() + " має низький рівень енергії.");
         } else if (energyLevel == 31 && energyLevel <= 70) {
-            System.out.println(animal + " має середній рівень енергії.");
+            System.out.println(animal.getName() + " має середній рівень енергії.");
         } else {
-            System.out.println(animal + " має високий рівень енергії.");
+            System.out.println(animal.getName() + " має високий рівень енергії.");
         }
     }
 
