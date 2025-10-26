@@ -38,6 +38,10 @@ public class ZooKeeper {
         }
     }
 
+    public void washAnimal(Animal animal) {
+        System.out.println(name + " чистить " + animal);
+    }
+
     public String getName() {
         return name;
     }
