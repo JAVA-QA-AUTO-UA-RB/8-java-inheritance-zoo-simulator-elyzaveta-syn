@@ -14,8 +14,4 @@ public class Elephant extends Mammal {
     public void spraySelf() {
         System.out.println(name + " поливає себе водою.");
     }
-
-    public String getName() {
-        return name;
-    }
 }

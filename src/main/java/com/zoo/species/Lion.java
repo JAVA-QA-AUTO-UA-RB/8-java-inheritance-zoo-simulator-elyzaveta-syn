@@ -15,8 +15,4 @@ public class Lion extends Mammal {
         System.out.println(name + " полює.");
         decreaseEnergy(25);
     }
-
-    public String getName() {
-        return name;
-    }
 }
