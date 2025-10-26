@@ -12,21 +12,21 @@ public class ZooKeeper {
         this.age = age;
     }
 
-    public void talk(String interlocutor) {
-        System.out.println(name + " говорить з " + interlocutor);
+    public void talk(ZooKeeper interlocutor) {
+        System.out.println(name + " говорить з " + interlocutor.getName());
     }
 
     public void feedAnimal(Animal animal) {
-        System.out.println(name + " годує " + animal);
+        System.out.println(name + " годує " + animal.getName());
     }
 
     public void playWithAnimal(Animal animal) {
-        System.out.println(name + " грається з " + animal);
+        System.out.println(name + " грається з " + animal.getName());
         animal.setMakeSound();
     }
 
     public void checkAnimalEnergyLevel(Animal animal) {
-        System.out.println(name + "перевіряє рівень енергії" + animal);
+        System.out.println(name + "перевіряє рівень енергії" + animal.getName());
         int energyLevel = animal.getEnergyLevel();
         System.out.println("Рівень енергії " + animal + " дорівнює " + energyLevel);
         if (energyLevel <= 30) {
@@ -39,7 +39,8 @@ public class ZooKeeper {
     }
 
     public void washAnimal(Animal animal) {
-        System.out.println(name + " чистить " + animal);
+        System.out.println(name + " чистить " + animal.getName());
+        animal.setMakeSound();
     }
 
     public String getName() {
