@@ -20,4 +20,7 @@ public class Penguin extends Bird {
         System.out.println(name + " не літає, але плаває");
     }
 
+    public String getName() {
+        return name;
+    }
 }

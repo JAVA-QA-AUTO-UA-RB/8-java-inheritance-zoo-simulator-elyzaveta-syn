@@ -16,4 +16,8 @@ public class Eagle extends Bird {
         System.out.println(name + " летить.");
         decreaseEnergy(20);
     }
+
+    public String getName() {
+        return name;
+    }
 }
