@@ -27,13 +27,11 @@ public class ZooSimulator {
 
         ZooKeeper zookeeper0 = new ZooKeeper("Алекс", 21);
         ZooKeeper zooKeeper1 = new ZooKeeper("Олеся", 27);
-
-        // - Годування тварин: використання методу feedAnimal().
-        // - Гра з тваринами: використання методу playWithAnimal().
-        // - Перевірка рівня енергії тварин: використання методу checkAnimalEnergyLevel().
+        ZooKeeper zooKeeper2 = new ZooKeeper("Ксенія", 25);
+        ZooKeeper zooKeeper3 = new ZooKeeper("Іван", 31);
 
         System.out.println("⁜ Звичний день у зоопарку \"Величне століття\" ⁜");
-        zookeeper0.talk(zooKeeper1.getName());
+        zookeeper0.talk(zooKeeper1);
         System.out.println("Алекс подивився на відвідувачів та заговорив: \"Вітаємо у нашому зоопарку! Нумо подивимось на наш прайд левів!\"");
 
         goldenLion2.hunt();
@@ -57,7 +55,22 @@ public class ZooSimulator {
         emperorPenguin0.makeSound();
         emperorPenguin1.fly();
 
+        // - Годування тварин: використання методу feedAnimal().
 
+        System.out.println("\nДоки відвідувачі пішли на екскурсію, працівники піклуються про тваринок...\n");
+        zooKeeper1.feedAnimal(goldenLion0);
+        zooKeeper1.feedAnimal(goldenLion1);
+        zooKeeper1.feedAnimal(goldenLion2);
+        zooKeeper1.feedAnimal(goldenLion3);
+        zooKeeper2.washAnimal(forestElephant0);
+        zookeeper0.playWithAnimal(forestElephant1);
+        zooKeeper3.feedAnimal(harpyEagle0);
+        zooKeeper3.feedAnimal(harpyEagle1);
+        zooKeeper3.washAnimal(harpyEagle2);
+        zooKeeper2.playWithAnimal(emperorPenguin0);
+        zooKeeper2.playWithAnimal(emperorPenguin1);
+
+        // - Перевірка рівня енергії тварин: використання методу checkAnimalEnergyLevel().
 
         // Виведіть фінальні результати та стани тварин наприкінці дня.
 
