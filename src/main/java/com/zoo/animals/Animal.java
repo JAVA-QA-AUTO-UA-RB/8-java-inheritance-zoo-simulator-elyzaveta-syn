@@ -9,9 +9,17 @@ abstract class Animal {
         this.name = name;
     }
 
-    public abstract void eat();
+    interface IEatable {
+        void eat();
+    }
 
-    public abstract void sleep();
+    interface ISleepable {
+        void sleep();
+    }
+
+    interface IPlayable {
+        void play();
+    }
 
     public abstract void makeSound();
 
