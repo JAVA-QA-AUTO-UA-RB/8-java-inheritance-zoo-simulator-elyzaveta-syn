@@ -17,10 +17,6 @@ public abstract class Animal {
         void sleep();
     }
 
-    interface IPlayable {
-        void play();
-    }
-
     public abstract void makeSound();
 
     public void displayInfo() {
