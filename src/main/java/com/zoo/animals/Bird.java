@@ -1,8 +1,8 @@
 package com.zoo.animals;
 
-public class Bird extends Animal {
-    public Bird(String name, int age, int weight) {
-        super(name, age, weight);
+abstract class Bird extends Animal {
+    public Bird(String name) {
+        super(name);
     }
 
     protected int wingSpan;

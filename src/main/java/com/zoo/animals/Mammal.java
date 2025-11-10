@@ -1,8 +1,8 @@
 package com.zoo.animals;
 
-public class Mammal extends Animal {
-    public Mammal(String name, int age, int weight) {
-        super(name, age, weight);
+abstract class Mammal extends Animal {
+    public Mammal(String name) {
+        super(name);
     }
 
     protected String furColour;

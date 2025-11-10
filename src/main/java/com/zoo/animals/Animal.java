@@ -1,37 +1,22 @@
 package com.zoo.animals;
 
-public class Animal {
+abstract class Animal {
     protected String name;
-    protected int age;
-    protected int weight;
-
-    public Animal(String name, int age, int weight) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-    }
-
     private int energyLevel;
     private int state;
 
-    public void eat() {
-        System.out.println(name + " зараз їсть.");
-        increaseEnergy(20);
+    public Animal(String name) {
+        this.name = name;
     }
 
-    public void sleep() {
-        System.out.println(name + " зараз спить.");
-        increaseEnergy(30);
-    }
+    public abstract void eat();
 
-    protected void makeSound() {
-        System.out.println("Кричить");
-    }
+    public abstract void sleep();
+
+    public abstract void makeSound();
 
     public void displayInfo() {
-        System.out.println("Ім'я: " + name +
-                "\n Вік: " + age +
-                "\n Вага: " + weight);
+        System.out.println("Ім'я: " + name);
     }
 
     public void displayAnimalState() {
@@ -49,19 +34,13 @@ public class Animal {
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public int getWeight() {
-        return weight;
-    }
-
     public int getEnergyLevel() {
         return energyLevel;
     }
 
-    public int getState() { return state; }
+    public int getState() {
+        return state;
+    }
 
     public void increaseEnergy(int integer1) {
         energyLevel = Math.min(100, energyLevel + integer1);
@@ -77,9 +56,5 @@ public class Animal {
 
     public void setState() {
         this.energyLevel = Math.max(1, Math.min(100, energyLevel));
-    }
-
-    public void setMakeSound() {
-        makeSound();
     }
 }
