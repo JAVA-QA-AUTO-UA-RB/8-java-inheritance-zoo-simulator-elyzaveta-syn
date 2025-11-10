@@ -7,6 +7,8 @@ abstract class Bird extends Animal {
 
     protected int wingSpan;
 
+    abstract void uniqueBirdAction();
+
     @Override
     public void makeSound() {
         System.out.println("Цвірінькає");
