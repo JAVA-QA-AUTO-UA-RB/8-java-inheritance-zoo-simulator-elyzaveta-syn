@@ -20,7 +20,9 @@ public abstract class Animal implements IEatable, ISleepable {
     }
 
     public void displayInfo() {
-        System.out.println("Ім'я: " + name);
+        System.out.println("Ім'я: " + name +
+                "\n Вік: " + age +
+                "\n Вага: " + weight);
     }
 
     public void displayAnimalState() {
