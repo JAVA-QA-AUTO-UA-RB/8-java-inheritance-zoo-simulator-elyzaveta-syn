@@ -47,4 +47,10 @@ public class Elephant extends Mammal implements IPlayable {
         System.out.println("Грайливо розкидую іграшки!");
         decreaseEnergy(10);
     }
+
+    @Override
+    public void groom() {
+        greet();
+        System.out.println("Мою шкіру зараз миють!");
+    }
 }

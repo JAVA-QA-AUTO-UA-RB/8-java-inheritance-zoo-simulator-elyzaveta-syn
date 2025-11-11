@@ -34,7 +34,7 @@ public class ZooKeeper {
     }
 
     public void checkAnimalEnergyLevel(Animal animal) {
-        System.out.println(name + "перевіряє рівень енергії" + animal.getName());
+        System.out.println(name + " перевіряє рівень енергії " + animal.getName());
         int energyLevel = animal.getEnergyLevel();
         System.out.println("Рівень енергії " + animal.getName() + " дорівнює " + energyLevel);
         if (energyLevel <= 30) {
@@ -48,7 +48,7 @@ public class ZooKeeper {
 
     public void washAnimal(Animal animal) {
         greet();
-        System.out.println("Зараз я дбайливо чищу" + animal.getName());
+        System.out.println("Зараз я дбайливо чищу тваринку!");
         animal.makeSound();
     }
 

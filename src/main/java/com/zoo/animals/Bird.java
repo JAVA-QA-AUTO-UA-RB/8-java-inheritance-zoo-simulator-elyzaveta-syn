@@ -16,6 +16,11 @@ public abstract class Bird extends Animal {
         decreaseEnergy(15);
     }
 
+    public void groom() {
+        greet();
+        System.out.println("Моє пір'я зараз чистять!");
+    }
+
     @Override
     public void makeSound() {
         System.out.println("Цвірінькає");
