@@ -2,7 +2,7 @@ package com.zoo.species;
 import com.zoo.animals.Bird;
 
 public class Penguin extends Bird implements IPlayable {
-    public Penguin(String name, int age, int weight, int wingSpan) {
+    public Penguin(String name, int age, int weight, double wingSpan) {
         super(name, age, weight, wingSpan);
     }
 
