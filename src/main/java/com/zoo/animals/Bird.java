@@ -1,11 +1,11 @@
 package com.zoo.animals;
 
 public abstract class Bird extends Animal {
-    protected int wingSpan;
+    protected double wingSpan;
 
     public abstract void uniqueBirdAction();
 
-    public Bird(String name, int age, int weight, int wingSpan) {
+    public Bird(String name, int age, int weight, double wingSpan) {
         super(name, age, weight);
         this.wingSpan = wingSpan;
     }
@@ -26,10 +26,10 @@ public abstract class Bird extends Animal {
         System.out.println("Ім'я: " + name +
                 "\n Вік: " + age +
                 "\n Вага: " + weight +
-                "\n Розмах крил: " + wingSpan);
+                "\n Розмах крил: " + wingSpan + " метрів");
     }
 
-    public int getWingSpan() {
+    public double getWingSpan() {
         return wingSpan;
     }
 }
