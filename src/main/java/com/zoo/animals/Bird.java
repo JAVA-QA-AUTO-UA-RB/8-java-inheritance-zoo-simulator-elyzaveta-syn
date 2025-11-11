@@ -7,7 +7,7 @@ public abstract class Bird extends Animal {
 
     protected int wingSpan;
 
-    abstract void uniqueBirdAction();
+    public abstract void uniqueBirdAction();
 
     @Override
     public void makeSound() {

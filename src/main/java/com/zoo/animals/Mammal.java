@@ -7,7 +7,7 @@ public abstract class Mammal extends Animal {
 
     protected String furColour;
 
-    abstract void move();
+    public abstract void move();
 
     @Override
     public void makeSound() {
