@@ -5,8 +5,14 @@ public abstract class Mammal extends Animal {
 
     public abstract void move();
 
-    public Mammal(String name, int age, int weight) {
+    public Mammal(String name, int age, int weight, String furColour) {
         super(name, age, weight);
+        this.furColour = furColour;
+    }
+
+    public void groom() {
+        greet();
+        System.out.println("Моє хутро зараз чистять!");
     }
 
     @Override
@@ -14,7 +20,4 @@ public abstract class Mammal extends Animal {
         System.out.println("Стогне");
     }
 
-    public void groom() {
-        System.out.println("Хутро" + name + "зараз чистять.");
-    }
 }

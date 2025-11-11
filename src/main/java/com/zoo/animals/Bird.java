@@ -5,8 +5,15 @@ public abstract class Bird extends Animal {
 
     public abstract void uniqueBirdAction();
 
-    public Bird(String name, int age, int weight) {
+    public Bird(String name, int age, int weight, int wingSpan) {
         super(name, age, weight);
+        this.wingSpan = wingSpan;
+    }
+
+    public void fly() {
+        greet();
+        System.out.println("Я лечу!");
+        decreaseEnergy(15);
     }
 
     @Override
@@ -14,8 +21,15 @@ public abstract class Bird extends Animal {
         System.out.println("Цвірінькає");
     }
 
-    public void fly() {
-        System.out.println(name + " літає.");
-        decreaseEnergy(15);
+    @Override
+    public void displayInfo() {
+        System.out.println("Ім'я: " + name +
+                "\n Вік: " + age +
+                "\n Вага: " + weight +
+                "\n Розмах крил: " + wingSpan);
+    }
+
+    public int getWingSpan() {
+        return wingSpan;
     }
 }
