@@ -10,7 +10,7 @@ public class Elephant extends Mammal implements IPlayable {
         greet();
         makeSound();
         System.out.println("Насолоджуюсь теплою водою та поливаю себе!");
-        increaseEnergy(5);
+        increaseEnergy(10);
     }
 
     @Override
@@ -23,7 +23,7 @@ public class Elephant extends Mammal implements IPlayable {
         greet();
         makeSound();
         System.out.println("Радісно тупаю ногами!");
-        decreaseEnergy(10);
+        decreaseEnergy(20);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Elephant extends Mammal implements IPlayable {
         greet();
         makeSound();
         System.out.println("Грайливо розкидую іграшки!");
-        decreaseEnergy(10);
+        decreaseEnergy(25);
     }
 
     @Override

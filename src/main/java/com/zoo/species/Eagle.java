@@ -9,7 +9,7 @@ public class Eagle extends Bird implements IPlayable {
     private void buildNest() {
         greet();
         System.out.println("Кропітливо будую гніздо.");
-        decreaseEnergy(10);
+        decreaseEnergy(25);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Eagle extends Bird implements IPlayable {
         greet();
         makeSound();
         System.out.println("Розрізаю крилами небокрай!");
-        decreaseEnergy(20);
+        decreaseEnergy(35);
     }
 
     @Override
@@ -50,6 +50,6 @@ public class Eagle extends Bird implements IPlayable {
         greet();
         makeSound();
         System.out.println("Ловлю іграшки в польоті!");
-        decreaseEnergy(25);
+        decreaseEnergy(30);
     }
 }

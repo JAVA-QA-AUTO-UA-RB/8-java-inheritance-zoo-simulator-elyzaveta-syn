@@ -10,7 +10,7 @@ public class Lion extends Mammal implements IPlayable {
         greet();
         makeSound();
         System.out.println("Я полюю!");
-        decreaseEnergy(25);
+        decreaseEnergy(35);
     }
 
     @Override
@@ -22,7 +22,7 @@ public class Lion extends Mammal implements IPlayable {
     public void move() {
         greet();
         System.out.println("Гуляю територією.");
-        decreaseEnergy(5);
+        decreaseEnergy(10);
     }
 
     @Override
@@ -37,7 +37,7 @@ public class Lion extends Mammal implements IPlayable {
     public void sleep() {
         greet();
         System.out.println("Гуляю в царстві Морфея!");
-        increaseEnergy(35);
+        increaseEnergy(30);
     }
 
     @Override
@@ -45,6 +45,6 @@ public class Lion extends Mammal implements IPlayable {
         greet();
         makeSound();
         System.out.println("Грайливо кусаю!");
-        decreaseEnergy(5);
+        decreaseEnergy(20);
     }
 }

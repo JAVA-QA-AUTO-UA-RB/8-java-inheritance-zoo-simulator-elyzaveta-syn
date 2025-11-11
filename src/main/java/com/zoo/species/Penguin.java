@@ -9,14 +9,14 @@ public class Penguin extends Bird implements IPlayable {
     public void swim() {
         greet();
         System.out.println("Плаваю в прохолодній воді.");
-        decreaseEnergy(15);
+        decreaseEnergy(35);
     }
 
     private void surfOnIce() {
         greet();
         makeSound();
         System.out.println("Серфую по снігу!");
-        decreaseEnergy(10);
+        decreaseEnergy(15);
     }
 
     @Override
@@ -57,6 +57,6 @@ public class Penguin extends Bird implements IPlayable {
         greet();
         makeSound();
         System.out.println("Я грайливо штовхаюсь!");
-        decreaseEnergy(5);
+        decreaseEnergy(15);
     }
 }
