@@ -20,4 +20,15 @@ public abstract class Mammal extends Animal {
         System.out.println("Стогне");
     }
 
+    @Override
+    public void displayInfo() {
+        System.out.println("Ім'я: " + name +
+                "\n Вік: " + age +
+                "\n Вага: " + weight +
+                "\n Колір хутра: " + furColour);
+    }
+
+    public String getFurColour() {
+        return furColour;
+    }
 }
