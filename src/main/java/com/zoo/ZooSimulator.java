@@ -1,10 +1,14 @@
 package com.zoo;
 
+import com.zoo.animals.IEatable;
 import com.zoo.species.Eagle;
 import com.zoo.species.Elephant;
 import com.zoo.species.Lion;
 import com.zoo.species.Penguin;
 import com.zoo.zookeper.ZooKeeper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ZooSimulator {
 
@@ -30,6 +34,12 @@ public class ZooSimulator {
         ZooKeeper zooKeeper2 = new ZooKeeper("Ксенія", 25);
         ZooKeeper zooKeeper3 = new ZooKeeper("Іван", 31);
 
+        List<IEatable> animalsDiet = new ArrayList<>();
+        animalsDiet.add(goldenLion0);
+        animalsDiet.add(forestElephant0);
+        animalsDiet.add(harpyEagle0);
+        animalsDiet.add(emperorPenguin0);
+
         System.out.println("⁜ Звичний день у зоопарку \"Величне століття\" ⁜\n");
         zookeeper0.talk(zooKeeper1);
         System.out.println("Алекс подивився на відвідувачів та заговорив: \"Вітаємо у нашому зоопарку! Нумо подивимось на наш прайд левів!\"");
@@ -49,6 +59,13 @@ public class ZooSimulator {
         System.out.println("\n\"А в іншій частині в нас живе пара пінгвінів.\"\n");
         emperorPenguin0.uniqueBirdAction();
         emperorPenguin1.fly();
+
+        System.out.println("\n\"А чи знаєте ви, що ці звірята їдять?\"\n");
+        for (IEatable animal : animalsDiet) {
+            System.out.println();
+            animal.eat();
+        }
+
 
         System.out.println("\nДоки відвідувачі пішли на екскурсію, працівники піклуються про тваринок...\n");
         zooKeeper1.feedAnimal(goldenLion0);
