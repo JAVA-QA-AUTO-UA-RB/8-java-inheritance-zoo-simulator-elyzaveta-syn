@@ -66,7 +66,6 @@ public class ZooSimulator {
             animal.eat();
         }
 
-
         System.out.println("\nДоки відвідувачі пішли на екскурсію, працівники піклуються про тваринок...\n");
         zooKeeper1.feedAnimal(goldenLion0);
         zooKeeper1.feedAnimal(goldenLion1);
