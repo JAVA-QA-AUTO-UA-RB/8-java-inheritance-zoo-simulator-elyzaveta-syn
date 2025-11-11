@@ -1,7 +1,7 @@
 package com.zoo.species;
 import com.zoo.animals.Mammal;
 
-public class Lion extends Mammal {
+public class Lion extends Mammal implements IPlayable {
     public Lion(String name, int age, int weight) {
         super(name, age, weight);
     }
@@ -29,5 +29,10 @@ public class Lion extends Mammal {
     @Override
     public void sleep() {
         System.out.println(name + " спить.");
+    }
+
+    @Override
+    public void play() {
+        System.out.println(name + " грається.");
     }
 }
