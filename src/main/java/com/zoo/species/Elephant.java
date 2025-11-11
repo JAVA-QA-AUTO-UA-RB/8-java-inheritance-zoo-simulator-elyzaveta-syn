@@ -1,9 +1,9 @@
 package com.zoo.species;
 import com.zoo.animals.Mammal;
 
-public class Elephant extends Mammal {
-    public Elephant(String name, int age, int weight) {
-        super(name, age, weight);
+public abstract class Elephant extends Mammal {
+    public Elephant(String name) {
+        super(name);
     }
 
     @Override
@@ -13,5 +13,10 @@ public class Elephant extends Mammal {
 
     public void spraySelf() {
         System.out.println(name + " поливає себе водою.");
+    }
+
+    @Override
+    public void move() {
+        System.out.println(name + " тупотить.");
     }
 }
