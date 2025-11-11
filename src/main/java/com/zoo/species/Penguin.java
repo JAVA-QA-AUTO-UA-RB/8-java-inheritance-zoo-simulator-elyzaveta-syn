@@ -41,7 +41,7 @@ public class Penguin extends Bird implements IPlayable {
     @Override
     public void eat() {
         greet();
-        System.out.println("Насолоджуюсь смачною рибою!");
+        System.out.println("Я насолоджуюсь смачною рибою!");
         increaseEnergy(25);
     }
 
