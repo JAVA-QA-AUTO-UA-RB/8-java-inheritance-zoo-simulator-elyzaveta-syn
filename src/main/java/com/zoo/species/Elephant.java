@@ -2,8 +2,8 @@ package com.zoo.species;
 import com.zoo.animals.Mammal;
 
 public class Elephant extends Mammal {
-    public Elephant(String name) {
-        super(name);
+    public Elephant(String name, int age, int weight) {
+        super(name, age, weight);
     }
 
     public void spraySelf() {

@@ -2,8 +2,8 @@ package com.zoo.species;
 import com.zoo.animals.Bird;
 
 public class Penguin extends Bird {
-    public Penguin(String name) {
-        super(name);
+    public Penguin(String name, int age, int weight) {
+        super(name, age, weight);
     }
 
     public void swim() {
