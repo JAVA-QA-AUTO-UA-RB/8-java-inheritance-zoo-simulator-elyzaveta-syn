@@ -5,8 +5,8 @@ public abstract class Bird extends Animal {
 
     public abstract void uniqueBirdAction();
 
-    public Bird(String name) {
-        super(name);
+    public Bird(String name, int age, int weight) {
+        super(name, age, weight);
     }
 
     @Override

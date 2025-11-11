@@ -5,8 +5,8 @@ public abstract class Mammal extends Animal {
 
     public abstract void move();
 
-    public Mammal(String name) {
-        super(name);
+    public Mammal(String name, int age, int weight) {
+        super(name, age, weight);
     }
 
     @Override
