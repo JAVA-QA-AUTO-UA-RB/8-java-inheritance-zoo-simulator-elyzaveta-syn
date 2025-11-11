@@ -1,13 +1,13 @@
 package com.zoo.animals;
 
 public abstract class Bird extends Animal {
-    public Bird(String name) {
-        super(name);
-    }
-
     protected int wingSpan;
 
     public abstract void uniqueBirdAction();
+
+    public Bird(String name) {
+        super(name);
+    }
 
     @Override
     public void makeSound() {

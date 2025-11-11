@@ -1,13 +1,13 @@
 package com.zoo.animals;
 
 public abstract class Mammal extends Animal {
-    public Mammal(String name) {
-        super(name);
-    }
-
     protected String furColour;
 
     public abstract void move();
+
+    public Mammal(String name) {
+        super(name);
+    }
 
     @Override
     public void makeSound() {
