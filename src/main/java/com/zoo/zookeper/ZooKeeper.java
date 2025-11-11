@@ -13,17 +13,23 @@ public class ZooKeeper {
         this.age = age;
     }
 
+    public void greet() {
+        System.out.println("Гей! Це " + name);
+    }
+
     public void talk(ZooKeeper interlocutor) {
         System.out.println(name + " говорить з " + interlocutor.getName());
     }
 
     public void feedAnimal(IEatable animal) {
-        System.out.println(name + " годує.");
+        greet();
+        System.out.println("Даю смаколики тваринці!");
         animal.eat();
     }
 
     public void playWithAnimal(IPlayable animal) {
-        System.out.println(name + " грається.");
+        greet();
+        System.out.println("Розважаю та одночасно треную звірятко!");
         animal.play();
     }
 
@@ -41,7 +47,8 @@ public class ZooKeeper {
     }
 
     public void washAnimal(Animal animal) {
-        System.out.println(name + " чистить " + animal.getName());
+        greet();
+        System.out.println("Зараз я дбайливо чищу" + animal.getName());
         animal.makeSound();
     }
 
