@@ -1,9 +1,10 @@
 package com.zoo.zookeper;
 
 import com.zoo.animals.Animal;
+import com.zoo.animals.IEatable;
+import com.zoo.species.IPlayable;
 
 public class ZooKeeper {
-
     private String name;
     private int age;
 
@@ -17,13 +18,13 @@ public class ZooKeeper {
     }
 
     public void feedAnimal(IEatable animal) {
-        System.out.println(name + " годує ");
+        System.out.println(name + " годує.");
         animal.eat();
     }
 
     public void playWithAnimal(IPlayable animal) {
-        System.out.println(name + " грається з " + animal.getName());
-        animal.makeSound();
+        System.out.println(name + " грається.");
+        animal.play();
     }
 
     public void checkAnimalEnergyLevel(Animal animal) {
