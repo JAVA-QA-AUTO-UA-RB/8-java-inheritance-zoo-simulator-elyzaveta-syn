@@ -2,12 +2,15 @@ package com.zoo.species;
 import com.zoo.animals.Mammal;
 
 public class Elephant extends Mammal implements IPlayable {
-    public Elephant(String name, int age, int weight) {
-        super(name, age, weight);
+    public Elephant(String name, int age, int weight, String furColour) {
+        super(name, age, weight, furColour);
     }
 
     public void spraySelf() {
-        System.out.println(name + " поливає себе водою.");
+        greet();
+        makeSound();
+        System.out.println("Насолоджуюсь теплою водою та поливаю себе!");
+        increaseEnergy(5);
     }
 
     @Override
@@ -17,21 +20,31 @@ public class Elephant extends Mammal implements IPlayable {
 
     @Override
     public void move() {
-        System.out.println(name + " тупотить.");
+        greet();
+        makeSound();
+        System.out.println("Радісно тупаю ногами!");
+        decreaseEnergy(10);
     }
 
     @Override
     public void eat() {
-        System.out.println(name + " їсть.");
+        greet();
+        System.out.println("Я смакую листям!");
+        increaseEnergy(25);
     }
 
     @Override
     public void sleep() {
-        System.out.println(name + " спить.");
+        greet();
+        System.out.println("Гуляю в царстві Морфея!");
+        increaseEnergy(30);
     }
 
     @Override
     public void play() {
-        System.out.println(name + " грається.");
+        greet();
+        makeSound();
+        System.out.println("Грайливо розкидую іграшки!");
+        decreaseEnergy(10);
     }
 }

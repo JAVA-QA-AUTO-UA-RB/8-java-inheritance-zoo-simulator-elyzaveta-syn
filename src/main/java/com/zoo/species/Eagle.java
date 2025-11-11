@@ -2,12 +2,14 @@ package com.zoo.species;
 import com.zoo.animals.Bird;
 
 public class Eagle extends Bird implements IPlayable {
-    public Eagle(String name, int age, int weight) {
-        super(name, age, weight);
+    public Eagle(String name, int age, int weight, int wingSpan) {
+        super(name, age, weight, wingSpan);
     }
 
     private void buildNest() {
-        System.out.println(name + " будує гніздо.");
+        greet();
+        System.out.println("Кропітливо будую гніздо.");
+        decreaseEnergy(10);
     }
 
     @Override
@@ -17,27 +19,37 @@ public class Eagle extends Bird implements IPlayable {
 
     @Override
     public void fly() {
-        System.out.println(name + " летить.");
+        greet();
+        makeSound();
+        System.out.println("Розрізаю крилами небокрай!");
         decreaseEnergy(20);
     }
 
     @Override
     public void uniqueBirdAction() {
+        greet();
         buildNest();
     }
 
     @Override
     public void eat() {
-        System.out.println(name + " їсть.");
+        greet();
+        System.out.println("Я насолоджуюсь мняском!");
+        increaseEnergy(23);
     }
 
     @Override
     public void sleep() {
-        System.out.println(name + " спить.");
+        greet();
+        System.out.println("Літаю в царстві Морфея!");
+        increaseEnergy(30);
     }
 
     @Override
     public void play() {
-        System.out.println(name + " грається.");
+        greet();
+        makeSound();
+        System.out.println("Ловлю іграшки в польоті!");
+        decreaseEnergy(25);
     }
 }

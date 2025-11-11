@@ -2,12 +2,14 @@ package com.zoo.species;
 import com.zoo.animals.Mammal;
 
 public class Lion extends Mammal implements IPlayable {
-    public Lion(String name, int age, int weight) {
-        super(name, age, weight);
+    public Lion(String name, int age, int weight, String furColour) {
+        super(name, age, weight, furColour);
     }
 
     public void hunt(){
-        System.out.println(name + " полює.");
+        greet();
+        makeSound();
+        System.out.println("Я полюю!");
         decreaseEnergy(25);
     }
 
@@ -18,21 +20,31 @@ public class Lion extends Mammal implements IPlayable {
 
     @Override
     public void move() {
-        System.out.println(name + " гуляє територією.");
+        greet();
+        System.out.println("Гуляю територією.");
+        decreaseEnergy(5);
     }
 
     @Override
     public void eat() {
-        System.out.println(name + " їсть.");
+        greet();
+        makeSound();
+        System.out.println("Я насолоджуюсь мняском!");
+        increaseEnergy(30);
     }
 
     @Override
     public void sleep() {
-        System.out.println(name + " спить.");
+        greet();
+        System.out.println("Гуляю в царстві Морфея!");
+        increaseEnergy(35);
     }
 
     @Override
     public void play() {
-        System.out.println(name + " грається.");
+        greet();
+        makeSound();
+        System.out.println("Грайливо кусаю!");
+        decreaseEnergy(5);
     }
 }
