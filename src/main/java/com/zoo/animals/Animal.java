@@ -1,20 +1,12 @@
 package com.zoo.animals;
 
-public abstract class Animal {
+public abstract class Animal implements IEatable, ISleepable {
     protected String name;
     private int energyLevel;
     private int state;
 
     public Animal(String name) {
         this.name = name;
-    }
-
-    interface IEatable {
-        void eat();
-    }
-
-    interface ISleepable {
-        void sleep();
     }
 
     public abstract void makeSound();
@@ -34,6 +26,14 @@ public abstract class Animal {
         }
     }
 
+    public void increaseEnergy(int value) {
+        energyLevel = Math.min(100, energyLevel + value);
+    }
+
+    public void decreaseEnergy(int value) {
+        energyLevel = Math.max(1, energyLevel - value);
+    }
+
     public String getName() {
         return name;
     }
@@ -44,14 +44,6 @@ public abstract class Animal {
 
     public int getState() {
         return state;
-    }
-
-    public void increaseEnergy(int integer1) {
-        energyLevel = Math.min(100, energyLevel + integer1);
-    }
-
-    public void decreaseEnergy(int integer2) {
-        energyLevel = Math.max(1, energyLevel - integer2);
     }
 
     public void setEnergyLevel() {
