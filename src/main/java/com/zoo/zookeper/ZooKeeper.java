@@ -16,13 +16,14 @@ public class ZooKeeper {
         System.out.println(name + " говорить з " + interlocutor.getName());
     }
 
-    public void feedAnimal(Animal animal) {
-        System.out.println(name + " годує " + animal.getName());
+    public void feedAnimal(IEatable animal) {
+        System.out.println(name + " годує ");
+        animal.eat();
     }
 
-    public void playWithAnimal(Animal animal) {
+    public void playWithAnimal(IPlayable animal) {
         System.out.println(name + " грається з " + animal.getName());
-        animal.setMakeSound();
+        animal.makeSound();
     }
 
     public void checkAnimalEnergyLevel(Animal animal) {
@@ -40,7 +41,7 @@ public class ZooKeeper {
 
     public void washAnimal(Animal animal) {
         System.out.println(name + " чистить " + animal.getName());
-        animal.setMakeSound();
+        animal.makeSound();
     }
 
     public String getName() {
