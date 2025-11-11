@@ -1,23 +1,13 @@
 package com.zoo.species;
 import com.zoo.animals.Bird;
 
-public abstract class Penguin extends Bird {
+public class Penguin extends Bird {
     public Penguin(String name) {
         super(name);
     }
 
-    @Override
-    public void makeSound() {
-        System.out.println("Кря-кря!");
-    }
-
     public void swim() {
         System.out.println(name + " пливе.");
-    }
-
-    @Override
-    public void fly() {
-        System.out.println(name + " не літає, але плаває");
     }
 
     private void surfOnIce() {
@@ -25,7 +15,27 @@ public abstract class Penguin extends Bird {
     }
 
     @Override
+    public void makeSound() {
+        System.out.println("Кря-кря!");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println(name + " не літає, але плаває");
+    }
+
+    @Override
     public void uniqueBirdAction() {
         surfOnIce();
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(name + " їсть.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(name + " спить.");
     }
 }

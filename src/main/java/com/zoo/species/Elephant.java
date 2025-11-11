@@ -1,14 +1,9 @@
 package com.zoo.species;
 import com.zoo.animals.Mammal;
 
-public abstract class Elephant extends Mammal {
+public class Elephant extends Mammal {
     public Elephant(String name) {
         super(name);
-    }
-
-    @Override
-    public void makeSound() {
-        System.out.println("Труба-ба-ба!");
     }
 
     public void spraySelf() {
@@ -16,7 +11,22 @@ public abstract class Elephant extends Mammal {
     }
 
     @Override
+    public void makeSound() {
+        System.out.println("Труба-ба-ба!");
+    }
+
+    @Override
     public void move() {
         System.out.println(name + " тупотить.");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(name + " їсть.");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println(name + " спить.");
     }
 }
