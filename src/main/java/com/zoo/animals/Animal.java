@@ -26,7 +26,7 @@ public abstract class Animal implements IEatable, ISleepable {
     }
 
     public void displayAnimalState() {
-        int state = getState();
+        int state = getEnergyLevel();
         if (state <= 30) {
             System.out.println("Стан " + getName() + " : виснажена.");
         } else if (state == 31 && state <= 70) {
@@ -65,10 +65,6 @@ public abstract class Animal implements IEatable, ISleepable {
     }
 
     public void setEnergyLevel() {
-        this.energyLevel = Math.max(1, Math.min(100, energyLevel));
-    }
-
-    public void setState() {
         this.energyLevel = Math.max(1, Math.min(100, energyLevel));
     }
 }
